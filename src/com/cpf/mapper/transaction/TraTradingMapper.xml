@@ -13,7 +13,7 @@
     <result column="Startingprice" property="startingprice" jdbcType="DOUBLE" />
     <result column="Reserveprice" property="reserveprice" jdbcType="DOUBLE" />
     <result column="isNoreserveprice" property="isnoreserveprice" jdbcType="VARCHAR" />
-    <result column="专场id" property="专场id" jdbcType="VARCHAR" />
+    <result column="zcid" property="zcid" jdbcType="VARCHAR" />
     <result column="Barterneeds" property="barterneeds" jdbcType="VARCHAR" />
     <result column="fare" property="fare" jdbcType="VARCHAR" />
     <result column="onInsurance" property="oninsurance" jdbcType="VARCHAR" />
