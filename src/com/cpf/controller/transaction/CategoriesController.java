@@ -1,4 +1,4 @@
-package com.cpf.controller.system;
+package com.cpf.controller.transaction;
 
 import java.util.List;
 
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cpf.beans.transaction.TraCategories;
-import com.cpf.service.system.CategoriesService;
+import com.cpf.service.transaction.CategoriesService;
 import com.cpf.util.JsonFormat;
 
 /**
- * 查询种类
+ * 种类管理模块--查询种类
  * @author jll
  * @date 2017-11-27 
  */
@@ -27,6 +27,10 @@ public class CategoriesController {
 	@Resource
 	private CategoriesService categoriesService;
 	
+	/**
+	 * 查询首页上面的分类
+	 * @return
+	 */
     @RequestMapping(value = "/categories", method= RequestMethod.GET, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
     public JsonFormat selectUserById(){

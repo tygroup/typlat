@@ -22,18 +22,18 @@
         </javaTypeResolver>
 
         
-        <javaModelGenerator targetPackage="com.cpf.beans.transaction" targetProject="CeramicPlatform/src">
+        <javaModelGenerator targetPackage="com.cpf.beans.system" targetProject="CeramicPlatform/src">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
          
-        <sqlMapGenerator targetPackage="com.cpf.mapper.transaction" targetProject="CeramicPlatform/src">
+        <sqlMapGenerator targetPackage="com.cpf.mapper.system" targetProject="CeramicPlatform/src">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         
-        <javaClientGenerator targetPackage="com.cpf.mapper.transaction" targetProject="CeramicPlatform/src" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.cpf.mapper.system" targetProject="CeramicPlatform/src" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
@@ -54,7 +54,7 @@
         <table tableName="userinfo" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         <table tableName="users" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
              --> 
-        
+        <!--  
         <table tableName="tra_barters" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         <table tableName="tra_barters_details" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         <table tableName="tra_bidrecord" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
@@ -68,7 +68,8 @@
         <table tableName="tra_specialorders_details" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         <table tableName="tra_trading" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         <table tableName="tra_transactionrecord" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-    
+    -->
+         <table tableName="sys_collect" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
         
     </context>
 </generatorConfiguration>
